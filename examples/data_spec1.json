@@ -1,0 +1,50 @@
+{
+    "step_size": 60,
+    "moving_window": 120,
+    "from_timestamp": "12.09.2022 14:00:00",
+    "to_timestamp": "12.09.2022 17:00:00",
+    "save_fetched_data": false,
+    "plot_fetched_data": true,
+    "plot_color": "blue",
+    "metric_list": [
+      {
+        "metric": "cluster:cpu_usage_cores:sum",
+        "step_size": 60,
+        "moving_window": 120,
+        "from_timestamp": "12.09.2022 14:30:00",
+        "to_timestamp": "13.09.2022 19:30:00",
+        "time_slices": [
+          {
+            "time_range": [
+              "12.09.2022 16:30:00",
+              "12.09.2022 22:00:00"
+            ],
+            "color": "gray",
+            "label": "sample-1"
+          },
+          {
+            "time_range": [
+              "12.09.2022 22:00:00",
+              "13.09.2022 06:00:00"
+            ],
+            "color": "coral",
+            "label": "sample-2"
+          },
+          {
+            "time_range": [
+              "13.09.2022 06:00:00",
+              "13.09.2022 17:30:00"
+            ],
+            "color": "mediumseagreen",
+            "label": "sample-3"
+          }
+        ],
+        "plot_title": "My cool plot",
+        "plot_filename": "my_cool_plot.png"
+      },
+      {
+        "metric": "namespace:container_cpu_usage:sum{namespace=\"openshift-marketplace\"}",
+        "plot_color": "red"
+      }
+    ]
+  }

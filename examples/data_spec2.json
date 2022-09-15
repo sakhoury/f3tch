@@ -1,0 +1,16 @@
+{
+    "step_size": 600,
+    "moving_window": 120,
+    "from_timestamp": "14.09.2022 07:00:00",
+    "to_timestamp": "15.09.2022 01:00:00",
+    "save_fetched_data": false,
+    "plot_fetched_data": true,
+    "plot_color": "blue",
+    "metric_list": [
+      {
+        "moving_window": 0,
+        "metric": "max_over_time(sum(pod:container_cpu_usage:sum{namespace=~\"openshift-logging|openshift-authentication-operator|openshift-kube-controller-manager|openshift-kube-apiserver|openshift-apiserver|open-cluster-management.*\"})[1h:30s])",
+        "plot_title": "My other cool plot"
+      }
+    ]
+  } 
