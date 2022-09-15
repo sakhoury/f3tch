@@ -20,7 +20,7 @@ def convert_time(timestamp):
 
 def strtime_to_timestamp(strtime):
     """This functions converts a datetime string variable to a Unix timestamp
-        Example: '18.05.2022 16:08:05' -> 1652882885
+        Example: '18.05.2022 16:08:05' -> 1652904485
 
     Args:
         strtime (str): datetime string formatted timestamp (%d.%m.%Y %H:%M:%S)
