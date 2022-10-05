@@ -1,0 +1,67 @@
+{
+    "step_size": 30,
+    "moving_window": 120,
+    "from_timestamp": "14.09.2022 09:00:00",
+    "to_timestamp": "15.09.2022 07:30:00",
+    "save_fetched_data": false,
+    "plot_fetched_data": true,
+    "plot_color": "teal",
+    "metric_list": [
+        {
+            "metric": "sum(pod:container_cpu_usage:sum)",
+            "step_size": 60,
+            "moving_window": 120,
+            "from_timestamp": "04.10.2022 09:00:00",
+            "to_timestamp": "05.10.2022 07:30:00",
+            "time_slices": [
+                {
+                    "time_range": [
+                        "04.10.2022 09:04:38",
+                        "04.10.2022 09:49:38"
+                    ],
+                    "color": "coral",
+                    "label": "5 policies"
+                },
+                {
+                    "time_range": [
+                        "04.10.2022 10:19:38",
+                        "04.10.2022 11:04:38"
+                    ],
+                    "color": "gray",
+                    "label": "6 policies"
+                },
+                {
+                    "time_range": [
+                        "04.10.2022 12:21:54",
+                        "04.10.2022 13:06:54"
+                    ],
+                    "color": "mediumseagreen",
+                    "label": "0 policies"
+                },
+                {
+                    "time_range": [
+                        "04.10.2022 13:29:12",
+                        "04.10.2022 14:14:12"
+                    ],
+                    "color": "red",
+                    "label": "1 policy"
+                },
+                {
+                    "time_range": [
+                        "05.10.2022 06:42:13",
+                        "05.10.2022 07:27:13"
+                    ],
+                    "color": "blue",
+                    "label": "disconnected"
+                }
+            ],
+            "plot_time_slices_overlaid": true,
+            "plot_time_slices_discontiguous": {
+                "spacing_between_slices": 10,
+                "x_axis_tick_rotation": 75
+            },
+            "plot_title": "CPU Usage, ACM 2.5.2, Spoke OCP 4.10.30",
+            "plot_filename": "/Users/sakhoury/Downloads/cpu_acm_252_ocp_41030.png"
+        }
+    ]
+}
