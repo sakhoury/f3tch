@@ -249,10 +249,10 @@ def plot_time_slices_discontiguous(time_series, metric_name, time_slices, moving
         start = end+x_spacing
         end += len(_data["x"])+x_spacing
 
-        for k, xt in enumerate(range(0, x_spacing)):
+        for _ in range(0, x_spacing):
             _xticks.append('')
 
-        for k, xt in enumerate(range(start, end)):
+        for k, _ in enumerate(range(start, end)):
             _xticks.append(_data["x"][k])
 
         axis.plot(range(start, end), _data["y"],
