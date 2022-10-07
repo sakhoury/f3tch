@@ -144,6 +144,8 @@ class Query():
             time_slices = metric.get("time_slices", [])
             plot_title = metric.get("plot_title", "")
             plot_filename = metric.get("plot_filename", "")
+            plot_time_slices_overlaid = metric.get("plot_time_slices_overlaid", False)
+            plot_time_slices_discontiguous = metric.get("plot_time_slices_discontiguous", {})
 
             # TODO: validate time_slices # pylint: disable=W0511
 
@@ -154,6 +156,8 @@ class Query():
                             "moving_window": moving_window,
                             "plot_color": plot_color,
                             "time_slices": time_slices,
+                            "plot_time_slices_overlaid": plot_time_slices_overlaid,
+                            "plot_time_slices_discontiguous": plot_time_slices_discontiguous,
                             "plot_title": plot_title,
                             "plot_filename": plot_filename})
 
